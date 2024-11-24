@@ -42,7 +42,7 @@
                     </select>
                     <div class="text-[tomato]">{{ errors.space }}</div>
                 </div>
-                <button class="bg-green-500 rounded-lg p-3  text-white" @click="createTask()">create</button>
+                <button class="bg-green-500 rounded-lg p-3  text-white" @click="createTask()">{{ index ? 'update' : 'create' }}</button>
             </div>
         </Dialog>
     </div>

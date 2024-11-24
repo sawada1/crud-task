@@ -55,10 +55,16 @@ export const useTasksStore = defineStore("tasks", () => {
     }
      
     const addSpace = () =>{
+        let checkSpace = spaces.value.includes(spaceText.value.toLowerCase())
         if(spaceText.value != ''){
-            spaces.value.push(spaceText.value)
-            spaceText.value = '';
-            showModel2.value = false;
+            if(checkSpace){
+                console.log('exist item');
+                
+            } else{
+                spaces.value.push(spaceText.value.toLowerCase())
+                spaceText.value = '';
+                showModel2.value = false;
+            }
         }
     }
 
@@ -66,9 +72,10 @@ export const useTasksStore = defineStore("tasks", () => {
     spaces.value.splice(index , 1);
     for (const column in tasks.value) {
         tasks.value[column as TaskColumn] = tasks.value[column as TaskColumn].filter((task) => task.space !== text);
-        // if (Object.prototype.hasOwnProperty.call(tasks.value, column)) {
-        // }
       }
+    }
+    const deleteTask = (targetColumn: TaskColumn , index:number)=>{
+        tasks.value[targetColumn].splice(index , 1);
     }
 
     return {
@@ -80,6 +87,7 @@ export const useTasksStore = defineStore("tasks", () => {
         indexTask,
         tasks,
         status,
+        deleteTask,
         spaceText,
         deleteSpace,
         addSpace,
