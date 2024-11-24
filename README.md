@@ -2,15 +2,13 @@
 
 This template should help get you started developing with Vue 3 in Vite.
 
-## Recommended IDE Setup
-
 ## Description
 
 This project is a Trello-like task management application built using modern web technologies, including Vue.js, TypeScript, and Pinia for state management. The application enables users to manage tasks through CRUD (Create, Read, Update, Delete) operations across multiple columns, with a drag-and-drop interface for seamless task movement. 
 
 The project leverages PrimeVue for UI components and Tailwind CSS for responsive and modern styling.
 
-
+## Recommended IDE Setup
 [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
 
 ## Type Support for `.vue` Imports in TS
