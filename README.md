@@ -2,6 +2,9 @@
 
 This template should help get you started developing with Vue 3 in Vite.
 
+# Demo
+https://crud-task10.netlify.app/
+
 ## Description
 
 This project is a Trello-like task management application built using modern web technologies, including Vue.js, TypeScript, and Pinia for state management. The application enables users to manage tasks through CRUD (Create, Read, Update, Delete) operations across multiple columns, with a drag-and-drop interface for seamless task movement. 
@@ -42,8 +45,8 @@ See [Vite Configuration Reference](https://vite.dev/config/).
 ## Project Setup
 Clone the repository:
    ```bash
-   git clone https://github.com/your-username/your-repo-name.git
-   cd your-repo-name
+   git clone https://github.com/sawada1/crud-task.git
+   cd crud-task
 ```sh
 npm install
 ```
